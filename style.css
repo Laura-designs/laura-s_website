@@ -1,0 +1,82 @@
+body {
+    background-color: #f0b56c;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 60px;
+}
+
+header div{
+    border: 2px solid rgb(167, 163, 164);
+    background-color: #ffe4c4;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    box-shadow: 0 0 0 #dedede;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+section {
+    background: #fff;
+    height: 100hv;
+}
+
+/* Circle Nav */
+nav.circle ul li a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50px;
+    background: transparent;
+}
+nav.circle ul li a:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+}
